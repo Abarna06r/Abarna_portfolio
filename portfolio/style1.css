@@ -1,0 +1,133 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-top: 40px;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #3498db;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline-box {
+  position: relative;
+  background: #0e101c;
+  border: 2px solid #1e90ff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 40%;
+  color: #fff;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.timeline-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(25, 27, 26, 0.849);
+}
+.timeline-box.left {
+  left: 0;
+}
+.timeline-box.right {
+  left: 60%;
+}
+.timeline-box::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #62c6f8;
+  border: 3px solid #0e101c;
+  z-index: 1;
+}
+.timeline-box.left::before {
+  right: -8px;
+}
+.timeline-box.right::before {
+  left: -8px;
+}
+@media (max-width: 767px) {
+  .timeline-box {
+    width: 90% !important;
+    left: 0 !important;
+  }
+  .timeline::after {
+    left: 10px;
+  }
+  .timeline-box::before {
+    left: 10px;
+  }
+}
+
+/* Skills */
+.skills-section .skill-box {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skills-section .skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Activities */
+.activity-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+.activity-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Certifications */
+.certifications-section .cert-card {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+.certifications-section .cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-left-color: #1abc9c;
+}
