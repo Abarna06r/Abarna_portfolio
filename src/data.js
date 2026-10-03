@@ -9,7 +9,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/abarna06r/",
   github: "https://github.com/Abarna06r",
   cgpa: "8.32",
-  resume: "/assets/Abarna_R_Resume_final.pdf"
+ resume: "assets/Abarna_R_Resume_final.pdf"
 };
 
 export const education = [

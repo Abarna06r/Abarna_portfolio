@@ -85,7 +85,7 @@ function App() {
                 {item}
               </a>
             ))}
-            <a className="nav-resume" href={profile.resume} target="_blank" rel="noreferrer">
+            <a className="nav-resume" href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" rel="noreferrer">
               Resume <ArrowUpRight size={15} />
             </a>
           </div>
@@ -120,7 +120,7 @@ function App() {
                 <a className="button primary" href="#projects">
                   See my work <ArrowDown size={17} />
                 </a>
-                <a className="button secondary" href={profile.resume} target="_blank" rel="noreferrer">
+                <a className="button secondary" href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" rel="noreferrer">
                   <Download size={17} /> Resume
                 </a>
               </div>
@@ -136,9 +136,9 @@ function App() {
               <div className="profile-card">
                 <div className="profile-photo">
   <img
-    src="/assets/profile.png"
-    alt="Abarna Rajan"
-  />
+  src={`${import.meta.env.BASE_URL}assets/profile.png`}
+  alt="Abarna Rajan"
+/>
 </div>
                 <div className="profile-card-bottom">
                   <div>
