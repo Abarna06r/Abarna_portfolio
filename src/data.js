@@ -41,8 +41,9 @@ export const projects = [
     description:
       "A Flutter + Supabase application for real-time authentication and smart-door monitoring, connected to ESP32 hardware and alerts for unauthorized access.",
     tools: ["Flutter", "Supabase", "ESP32", "FCM"],
-    github: "https://github.com/Abarna06r"
+    github: "https://github.com/Abarna06r/noEntry1"
   },
+
   {
     number: "02",
     title: "GestureFlow",
@@ -52,6 +53,7 @@ export const projects = [
     tools: ["Python", "OpenCV", "MediaPipe", "Random Forest", "PyAutoGUI"],
     github: "https://github.com/Abarna06r/Gesture_flow_ml"
   },
+
   {
     number: "03",
     title: "Elite Tourism",
@@ -59,6 +61,36 @@ export const projects = [
     description:
       "A full-stack travel platform for managing destinations, packages and bookings with Oracle database connectivity and CRUD operations.",
     tools: ["Python Flask", "Oracle SQL", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Abarna06r"
+  },
+
+  {
+    number: "04",
+    title: "MediMap",
+    subtitle: "Medicine Reminder & Management App",
+    description:
+      "A Flutter-based medicine management application that helps users organize their medications, set reminders for scheduled doses, and receive timely notifications.",
+    tools: ["Flutter", "Dart", "Local Notifications", "Mobile App Development"],
+    github: "https://github.com/Abarna06r"
+  },
+
+  {
+    number: "05",
+    title: "Autonomous Network Slice Admission Control",
+    subtitle: "Resource-Aware Network Slicing System",
+    description:
+      "A computer network simulation that evaluates incoming network slice requests based on available resources and QoS requirements, deciding whether requests can be admitted while maintaining resources for existing slices.",
+    tools: ["Computer Networks", "Network Slicing", "QoS", "Resource Allocation", "Python"],
+    github: "https://github.com/Abarna06r/Attack_path_detection "
+  },
+
+  {
+    number: "06",
+    title: "Hostel Complaint Management System",
+    subtitle: "Mobile-Based Complaint Management Platform",
+    description:
+      "A complaint management system that allows hostel students to submit and track complaints, while administrators can manage complaints, update their status, and monitor resolution through a centralized backend.",
+    tools: ["React Native", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/Abarna06r"
   }
 ];
